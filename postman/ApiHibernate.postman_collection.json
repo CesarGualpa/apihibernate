@@ -122,6 +122,58 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "Probar busqueda genero",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/peliculas/genero?genero=Accion",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "peliculas",
+            "genero"
+          ],
+          "query": [
+            {
+              "key": "genero",
+              "value": "Accion"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar por disponibilidad",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/peliculas/disponible?disponible=false",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "peliculas",
+            "disponible"
+          ],
+          "query": [
+            {
+              "key": "disponible",
+              "value": "false"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ]
 }
