@@ -41,6 +41,7 @@ public class ServicioPelicula {
 		pelicula.setGenero(datos.getGenero());
 		pelicula.setDuracion(datos.getDuracion());
 		pelicula.setDisponible(datos.isDisponible());
+		pelicula.setCalificacion(datos.getCalificacion());
 
 		return peliculaRepository.save(pelicula);
 	}
