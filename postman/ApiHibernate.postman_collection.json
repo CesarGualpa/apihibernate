@@ -1,0 +1,127 @@
+{
+  "info": {
+    "_postman_id": "11cb6e35-402b-439c-97f4-e509e8cef125",
+    "name": "ApiHibernate",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56637168",
+    "_collection_link": "https://go.postman.co/collection/56637168-11cb6e35-402b-439c-97f4-e509e8cef125?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Crear pelicula",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\": \"Pelicula Temporal\",\r\n    \"director\": \"Director Prueba\",\r\n    \"genero\": \"Prueba\",\r\n    \"duracion\": 90,\r\n    \"disponible\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/peliculas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "peliculas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar peliculas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/peliculas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "peliculas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/peliculas/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "peliculas",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar pelicula",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\": \"Interstellar\",\r\n    \"director\": \"Christopher Nolan\",\r\n    \"genero\": \"Ciencia Ficcion\",\r\n    \"duracion\": 170,\r\n    \"disponible\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/peliculas/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "peliculas",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "GET http://localhost:8080/peliculas/5",
+          "protocol": "GET http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "peliculas",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
